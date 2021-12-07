@@ -10,11 +10,9 @@ html {
 
 body {
 	font-family: "sofiapro", sans-serif;
-	max-width: 30rem;
+	font-size: 12px;
 	line-height: 1;
 	font-weight: 400;
-	padding: 1.2rem 1.2rem;
-	margin: 0 auto;
 }
 
 ul {
@@ -26,6 +24,12 @@ a {
 	color: currentColor;
 }
 
+.container {
+	max-width: 40rem;
+	padding: 1.2rem 1.2rem;
+	margin: 0 auto;
+}
+
 /* ************************** */
 /* Nav section */
 /* ************************** */
@@ -34,11 +38,12 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 3rem;
+
+	margin-bottom: 5rem;
 }
 
 .logo {
-	width: 6.2rem;
+	width: 8rem;
 }
 
 .search {
@@ -54,12 +59,11 @@ a {
 
 .search__window {
 	border: none;
-	font-size: 1rem;
+	/* font-size: 12px; */
 }
 
 .nav__container {
 	display: none;
-	margin: 0 auto;
 }
 
 .btn__mobile__nav {
@@ -79,23 +83,31 @@ a {
 
 .main {
 	display: flex;
-	gap: 1rem;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
 }
 
 .menu__header {
-	margin-bottom: 2rem;
+	font-size: 1.6rem;
 }
 
 .menu__list__item {
 	display: flex;
 	align-items: center;
-	gap: 1.2rem;
-	margin-bottom: 1.2rem;
+	gap: 1rem;
+	margin-bottom: 2rem;
 	color: #000;
 }
 
-.menu__list__item:last-child {
-	justify-items: end;
+.menu__list__item:first-child {
+	margin-bottom: 3rem;
 }
 
 .menu__img {
@@ -103,34 +115,91 @@ a {
 	margin-top: 1rem;
 }
 
+.menu__help {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+
+	color: #000;
+}
+
 .cards {
-	max-width: 27rem;
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: 1rem;
-	margin: 0 auto;
 }
 
 .cards__block {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-
-	max-width: 18rem;
+	flex-basis: content;
+	justify-content: stretch;
 	gap: 1rem;
 }
 
 .first__block {
 	display: flex;
 	flex-direction: column;
+	justify-content: stretch;
 	gap: 1rem;
-	width: 100%;
 }
 
 .second__block {
+	max-width: 48%;
 	display: flex;
 	gap: 1rem;
-	width: 100%;
-	height: 23.5%;
-	margin: 0 auto;
+}
+
+.card__vertical {
+	max-width: 100%;
+	align-self: stretch;
+}
+
+.card__horizont {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: 700px) {
+	.container {
+		max-width: 70rem;
+	}
+
+	.cards {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 900px) {
+	body {
+		font-size: 14px;
+	}
+
+	.logo {
+		width: 9rem;
+	}
+
+	.container {
+		max-width: 90rem;
+	}
+
+	.btn__mobile__nav {
+		display: none;
+	}
+
+	.nav__container {
+		display: inline-block;
+	}
+
+	.nav__list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1.4rem;
+	}
+
+	.menu__header {
+		font-size: 1.8rem;
+	}
 }
