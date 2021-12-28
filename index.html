@@ -1,178 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link
-			href="fonts/sofiapro/stylesheet.css"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule=""
-			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-		></script>
-		<title>Wigs-Ecommerce</title>
-	</head>
-	<body>
-		<div class="container">
-			<header class="header">
-				<a href="#">
-					<img src="Img/Group 1.png" alt="logo" class="logo" />
-				</a>
-				<div class="search">
-					<img class="search__img" src="img/search.png" alt="search scope" />
-					<input
-						type="search"
-						class="search__window"
-						placeholder="Search store"
-					/>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link href="fonts/sofiapro/stylesheet.css" rel="stylesheet" type="text/css" />
+	<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+	<title>Wigs-Ecommerce</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="#">
+				<img src="Img/Group 1.png" alt="logo" class="logo" />
+			</a>
+			<div class="search">
+				<img class="search__img" src="./img/search.png" alt="search scope" />
+				<input type="search" class="search__window" placeholder="Search store" />
+			</div>
+			<nav class="nav__container">
+				<ul class="nav__list">
+					<li class="nav__list__item"><a href="">product</a></li>
+					<li class="nav__list__item"><a href="">story</a></li>
+					<li class="nav__list__item"><a href="">manufacturing</a></li>
+					<li class="nav__list__item"><a href="">packaging</a></li>
+					<li class="nav__list__item">
+						<a href="#">
+							<img src="./img/basket.png" alt="shoping baskeet" /></a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#"> <img src="./img/person.png" alt="person icon" /></a>
+					</li>
+				</ul>
+			</nav>
+			<button class="btn__mobile__nav">
+				<ion-icon class="icon__mobile__nav" name="menu-outline"></ion-icon>
+			</button>
+		</header>
+
+		<main class="main">
+			<section class="menu">
+				<ul class="menu__list">
+					<li class="menu__list__item">
+						<h1 class="menu__header">Explore</h1>
+					</li>
+					<li class="menu__list__item">
+						<img class="menu__img" src="Img/menu/image 15.png" alt="lighting icon" />
+						<a href="#" class="menu__name">New In</a>
+					</li>
+					<li class="menu__list__item">
+						<img class="menu__img" src="Img/menu/image 9.png" alt="clothing icon" />
+						<a href="#" class="menu__name">Clothing</a>
+					</li>
+					<li class="menu__list__item">
+						<img class="menu__img" src="Img/menu/image 8.png" alt="shoe ionicons" />
+						<a href="#" class="menu__name">Shoes</a>
+					</li>
+					<li class="menu__list__item">
+						<img src="Img/menu/image 7.png" alt="bag icon" class="menu-img" />
+						<a href="#" class="menu__name">Accessories</a>
+					</li>
+					<li class="menu__list__item">
+						<img class="menu__img" src="Img/menu/image 6.png" alt="excersizing person icon" />
+						<a href="#" class="menu__name">Activewear</a>
+					</li>
+					<li class="menu__list__item">
+						<img class="menu__img" src="Img/menu/image 4.png" alt="gift box icon" />
+						<a href="Img/menu/image 4.png" class="menu-name">Gift&Living</a>
+					</li>
+					<li class="menu__list__item">
+						<img class="menu__img" src="Img/menu/image 5.png" alt="dimond icon" />
+						<a href="#" class="menu-name">Inspiration</a>
+					</li>
+				</ul>
+
+				<figure class="menu__help">
+					<img src="Img/menu/Vector.png" alt="conversion cloud icon" />
+					<a href="#">Help Center</a>
+				</figure>
+			</section>
+
+			<section class="cards">
+				<div class="cards__block">
+					<div class="first__block">
+						<img class="card__horizont" src="Img/W1.png" alt="promo picture" />
+						<img class="card__horizont" src="Img/Mask Group.png" alt="promo picture" />
+					</div>
+					<div class="second__block">
+						<img class="card__vertical" src="Img/image 35.png" alt=" woman on red" />
+						<img class="card__vertical" src="Img/image 36.png" alt="smailing woman" />
+					</div>
 				</div>
-				<nav class="nav__container">
-					<ul class="nav__list">
-						<li class="nav__list__item"><a href="">product</a></li>
-						<li class="nav__list__item"><a href="">story</a></li>
-						<li class="nav__list__item"><a href="">manufacturing</a></li>
-						<li class="nav__list__item"><a href="">packaging</a></li>
-						<li class="nav__list__item">
-							<a href="#">
-								<img src="img/basket.png" alt="shoping baskeet"
-							/></a>
-						</li>
-						<li class="nav__list__item">
-							<a href="#"> <img src="img/person.png" alt="person icon" /></a>
-						</li>
-					</ul>
-				</nav>
-				<button class="btn__mobile__nav">
-					<ion-icon class="icon__mobile__nav" name="menu-outline"></ion-icon>
-				</button>
-			</header>
-
-			<main class="main">
-				<section class="menu">
-					<ul class="menu__list">
-						<li class="menu__list__item">
-							<h1 class="menu__header">Explore</h1>
-						</li>
-						<li class="menu__list__item">
-							<img
-								class="menu__img"
-								src="Img/menu/image 15.png"
-								alt="lighting icon"
-							/>
-							<a href="#" class="menu__name">New In</a>
-						</li>
-						<li class="menu__list__item">
-							<img
-								class="menu__img"
-								src="Img/menu/image 9.png"
-								alt="clothing icon"
-							/>
-							<a href="#" class="menu__name">Clothing</a>
-						</li>
-						<li class="menu__list__item">
-							<img
-								class="menu__img"
-								src="Img/menu/image 8.png"
-								alt="shoe ionicons"
-							/>
-							<a href="#" class="menu__name">Shoes</a>
-						</li>
-						<li class="menu__list__item">
-							<img src="Img/menu/image 7.png" alt="bag icon" class="menu-img" />
-							<a href="#" class="menu__name">Accessories</a>
-						</li>
-						<li class="menu__list__item">
-							<img
-								class="menu__img"
-								src="Img/menu/image 6.png"
-								alt="excersizing person icon"
-							/>
-							<a href="#" class="menu__name">Activewear</a>
-						</li>
-						<li class="menu__list__item">
-							<img
-								class="menu__img"
-								src="Img/menu/image 4.png"
-								alt="gift box icon"
-							/>
-							<a href="Img/menu/image 4.png" class="menu-name">Gift&Living</a>
-						</li>
-						<li class="menu__list__item">
-							<img
-								class="menu__img"
-								src="Img/menu/image 5.png"
-								alt="dimond icon"
-							/>
-							<a href="#" class="menu-name">Inspiration</a>
-						</li>
-					</ul>
-
-					<figure class="menu__help">
-						<img src="Img/menu/Vector.png" alt="conversion cloud icon" />
-						<a href="#">Help Center</a>
-					</figure>
-				</section>
-
-				<section class="cards">
-					<div class="cards__block">
-						<div class="first__block">
-							<img
-								class="card__horizont"
-								src="Img/W1.png"
-								alt="promo picture"
-							/>
-							<img
-								class="card__horizont"
-								src="Img/Mask Group.png"
-								alt="promo picture"
-							/>
-						</div>
-						<div class="second__block">
-							<img
-								class="card__vertical"
-								src="Img/image 35.png"
-								alt=" woman on red"
-							/>
-							<img
-								class="card__vertical"
-								src="Img/image 36.png"
-								alt="smailing woman"
-							/>
-						</div>
+				<div class="cards__block">
+					<div class="second__block">
+						<img class="card__vertical" src="Img/image 33.png" alt="woman in pink glasses " />
+						<img class="card__vertical" src="Img/image 34.png" alt="woman in black glasses" />
 					</div>
-					<div class="cards__block">
-						<div class="second__block">
-							<img
-								class="card__vertical"
-								src="Img/image 33.png"
-								alt="woman in pink glasses "
-							/>
-							<img
-								class="card__vertical"
-								src="Img/image 34.png"
-								alt="woman in black glasses"
-							/>
-						</div>
 
-						<div class="first__block">
-							<img
-								class="card__horizont"
-								src="Img/W5.png"
-								alt="trending items"
-							/>
-							<img class="card__horizont" src="Img/W6.png" alt="new in store" />
-						</div>
+					<div class="first__block">
+						<img class="card__horizont" src="Img/W5.png" alt="trending items" />
+						<img class="card__horizont" src="Img/W6.png" alt="new in store" />
 					</div>
-				</section>
-			</main>
-		</div>
-	</body>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+
 </html>
