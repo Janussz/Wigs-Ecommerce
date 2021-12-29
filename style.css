@@ -134,14 +134,14 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-basis: content;
-	justify-content: stretch;
+	justify-content: space-evenly;
 	gap: 1rem;
 }
 
 .first__block {
 	display: flex;
 	flex-direction: column;
-	justify-content: stretch;
+	justify-content: space-evenly;
 	gap: 1rem;
 }
 
@@ -155,6 +155,7 @@ a {
 	max-width: 100%;
 	align-self: stretch;
 	border-radius: 10px;
+
 
 }
 
